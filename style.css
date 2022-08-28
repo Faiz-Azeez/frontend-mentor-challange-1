@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+
+/* main columes css starts */
+
+.parent{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.colume1{
+height: 500px;
+display: flex;
+}
+
+    /* image css colume-1 border */
+    .imgborder{
+    border-radius: 15px 0px 0px 15px;
+    }
+    /* image css colume-1 border ends */
+
+
+.colume2{
+display: flex;
+flex-direction: column;
+width: 220px; 
+padding: 20px 40px 40px 40px;
+background-color: white;
+border-radius: 0px 15px 15px 0px;
+}
+
+
+.innercol1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 10px;
+}
+
+
+
+/* main columes css end */
+
+
+    
+
+
+/* price / title tag css start*/
+
+.price1,.title{
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+
+}
+
+.price1{
+    color: hsl(158, 36%, 37%);
+}
+
+.price2{
+    display: flex;
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    align-items: center;
+    justify-content: center;
+}
+
+/* price tag css end*/
+
+
+/* text patagraph css start */
+
+.para1,.para2{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.para1{
+    letter-spacing: 3px;
+
+}
+.para2{
+    margin-bottom: -10px;
+}
+
+
+  /* text paragraph ends */
+
+
+
+
+ /* button css start */
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color:hsl(159, 44%, 15%);
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;    
+        
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: hsl(228, 12%, 48%);
+  }
+
+
+/* button css end */
+
+
+
+
+
+/* responsive design 768 px start */
+
+@media (max-width: 768px) {
+    .colume1,.colume2{
+      flex: 100%;
+      border-radius: 0px 0px 10px 10px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .colume1{
+
+        flex: 100%;
+      border-radius: 0px;
+    height: 400px;
+      
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .parent{
+     display: flex;
+    justify-content: flex-start;
+      border-radius: 0px;
+      padding: 20px;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .imgborder {
+     border-radius: 10px  10px 0px 0px; 
+     background-image: url("images/img2.jpg");
+     flex: 100%;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .price2{
+      margin-right: 100px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      
+      
+    }
+  }
+
+/* responsive design 768 px ends */
+
+
+
